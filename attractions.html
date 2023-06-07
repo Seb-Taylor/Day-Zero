@@ -6,29 +6,107 @@
 </head>
 <body>
     <nav>
-        <div class="logo en">GOVANTAGE LOGO</div>
-        <div class="logo ar" style="display: none;">LOGO IN ARABIC</div>
-        <div class="logo uk" style="display: none;">LOGO IN UKRAINIAN</div>
-        <div class="logo zh" style="display: none;">LOGO IN CANTONESE</div>
-        <div class="logo ps" style="display: none;">LOGO IN PASHTO</div>
         <button id="switch-lang">Switch Language</button>
+        <button id="add-attraction">Add New Attraction</button>
     </nav>
     <div class="attractions">
         <div class="attraction" id="attraction1">
-            <img src="attraction1.jpg" alt="Attraction 1">
-            <h2 class="attraction-title en">Fairfield Shipyard</h2>
-            <h2 class="attraction-title ar" style="display: none;">عتبة فيرفيلد</h2>
-            <h2 class="attraction-title uk" style="display: none;">Ферфілдський корабельний завод</h2>
-            <h2 class="attraction-title zh" style="display: none;">斐菲爾德船廠</h2>
-            <h2 class="attraction-title ps" style="display: none;">د فیلډفیلډ سپوږمونه</h2>
-            <p class="attraction-description en">Explore the rich history of the Fairfield Shipyard, once one of the most successful shipyards in the world. Discover the remarkable engineering prowess that led to the construction of some of the fastest, largest, and most beautiful ships in history. Learn about the impact of the shipbuilding industry on the local community and the innovations that shaped maritime engineering.</p>
-            <p class="attraction-description ar" style="display: none;">استكشف تاريخ ورشة فيرفيلد الغني، التي كانت في يوم من الأيام واحدة من أكثر الورش نجاحًا في العالم. اكتشف القدرة الهندسية المذهلة التي أدت إلى بناء بعض من أسرع وأكبر وأجمل السفن في التاريخ. تعرّف على تأثير صناعة بناء السفن على المجتمع المحلي والابتكارات التي شكلت هندسة البحرية.</p>
-            <p class="attraction-description uk" style="display: none;">Досліджуйте багату історію верфі Ферфілд, колись однієї з найуспішніших верф у світі. Відкрийте для себе неймовірні інженерні досягнення, що привели до будівництва найшвидших, найбільших і найкрасивіших кораблів в історії. Дізнайтеся про вплив суднобудівної промисловості на місцеву громаду та інновації, які сформували морське інженерство.</p>
-            <p class="attraction-description zh" style="display: none;">探索菲菲尔德船厂悠久的历史，这曾是世界上最成功的船厂之一。了解卓越的工程能力，建造了一些史上最快、最大、最美丽的船舶。了解造船业对当地社区的影响以及塑造海洋工程学的创新。</p>
-            <p class="attraction-description ps" style="display: none;">د فیلډفیلډ سپوږمونه په موږ د ټولو ډېر ورزیاتوبو کښې دی، د دنیا څخه ډېره کامیابه سپوږمونه یې څخه په مرحله کې شوی. لاسته د سپوږمونو چمتو توانائي چې تر موږ تاریخه کې لوستلې اسرعه، لویو ورځنۍ او څرګنده سپوږمونه ورکړي. پوښتنلیک کړئ چې د سپوږمونو صنعت په محلي جامعې سره لږلو تاثیر چې ځینې په همداراز کښې د کوچنی پازوالتو آفغانانو سره هم کوي او د مارپیچي په ګوډه کښې شکل مخکښ کړئ.</p>
+            <div class="attraction-header" onclick="toggleAttraction('attraction1')">
+                <img src="attraction1.jpg" alt="Attraction 1">
+                <h2>
+                    <span lang="en">Fairfield Shipyard</span>
+                    <span lang="ar" style="display: none;">مرفأ فيرفيلد</span>
+                    <span lang="uk" style="display: none;">Ферфілдський верф</span>
+                    <span lang="zh" style="display: none;">費爾菲爾德造船廠</span>
+                    <span lang="ps" style="display: none;">فیرفیلڈ شپ یارڈ</span>
+                </h2>
+            </div>
+            <div>
+                <p lang="en" style="display: none;">Fairfield Shipyard was a Scottish shipbuilding company...</p>
+                <p lang="ar" style="display: none;">كان مرفأ فيرفيلد شركة بناء سفن اسكتلندية في منطقة جوفان...</p>
+                <p lang="uk" style="display: none;">Ферфілдський верф був шотландською суднобудівною компанією...</p>
+                <p lang="zh" style="display: none;">費爾菲爾德造船廠是一家蘇格蘭造船公司...</p>
+                <p lang="ps" style="display: none;">فیرفیلڈ شپ یارڈ افغانستان یوه معروف کمپنۍ دی چه ته افغانستان کې د جوبنې کښېدو...</p>
+                <!-- Include the descriptions in other languages here -->
+            </div>
         </div>
-        <!-- Repeat for the other attractions -->
+        
+        <div class="attraction" id="attraction2">
+            <div class="attraction-header" onclick="toggleAttraction('attraction2')">
+                <img src="attraction2.jpg" alt="Attraction 2">
+                <h2>
+                    <span lang="en">Majestic Castle</span>
+                    <span lang="ar" style="display: none;">قلعة المجد</span>
+                    <span lang="uk" style="display: none;">Величний замок</span>
+                    <span lang="zh" style="display: none;">壯麗城堡</span>
+                    <span lang="ps" style="display: none;">قلعۀ با شکوه</span>
+                </h2>
+            </div>
+            <div>
+                <p lang="en" style="display: none;">Majestic Castle is a historical fortress that dates back to medieval times...</p>
+                <p lang="ar" style="display: none;">قلعة المجد هي قلعة تاريخية تعود إلى العصور الوسطى...</p>
+                <p lang="uk" style="display: none;">Величний замок - історичний фортеця, який сягає середньовіччя...</p>
+                <p lang="zh" style="display: none;">壯麗城堡是一座可以追溯到中世紀的歷史堡壘...</p>
+                <p lang="ps" style="display: none;">قلعۀ با شکوه یک قلعه تاریخی است که به دوران قرون وسطی بازمی‌گردد...</p>
+                <!-- Include the descriptions in other languages here -->
+            </div>
+        </div>
+        
+        <div class="attraction" id="attraction3">
+            <div class="attraction-header" onclick="toggleAttraction('attraction3')">
+                <img src="attraction3.jpg" alt="Attraction 3">
+                <h2>
+                    <span lang="en">Serenity Park</span>
+                    <span lang="ar" style="display: none;">حديقة السكينة</span>
+                    <span lang="uk" style="display: none;">Парк спокою</span>
+                    <span lang="zh" style="display: none;">寧靜公園</span>
+                    <span lang="ps" style="display: none;">باغ سکوت</span>
+                </h2>
+            </div>
+            <div>
+                <p lang="en" style="display: none;">Serenity Park is a beautiful green space in the heart of the city...</p>
+                <p lang="ar" style="display: none;">حديقة السكينة هي مساحة خضراء جميلة في قلب المدينة...</p>
+                <p lang="uk" style="display: none;">Парк спокою - це прекрасна зелена зона в самому серці міста...</p>
+                <p lang="zh" style="display: none;">寧靜公園位於城市的中心，是一個美麗的綠地空間...</p>
+                <p lang="ps" style="display: none;">باغ سکوت یک فضای سبز زیبا در قلب شهر است...</p>
+                <!-- Include the descriptions in other languages here -->
+            </div>
+        </div>
+        
+        <div class="attraction" id="attraction4">
+            <div class="attraction-header" onclick="toggleAttraction('attraction4')">
+                <img src="attraction4.jpg" alt="Attraction 4">
+                <h2>
+                    <span lang="en">Sunset Beach</span>
+                    <span lang="ar" style="display: none;">شاطئ الغروب</span>
+                    <span lang="uk" style="display: none;">Пляж заходу сонця</span>
+                    <span lang="zh" style="display: none;">日落海灘</span>
+                    <span lang="ps" style="display: none;">ساحل غروب</span>
+                </h2>
+            </div>
+            <div>
+                <p lang="en" style="display: none;">Sunset Beach offers stunning views of the ocean during the evening...</p>
+                <p lang="ar" style="display: none;">شاطئ الغروب يقدم مناظر خلابة للمحيط خلال فترة المساء...</p>
+                <p lang="uk" style="display: none;">Пляж заходу сонця надає чудові види на океан увечері...</p>
+                <p lang="zh" style="display: none;">日落海灘在傍晚時分提供了令人驚嘆的海洋美景...</p>
+                <p lang="ps" style="display: none;">ساحل غروب څخه په شپږ کې به ښکته منظره بهر چې په شپږ کې د پخواني پوښښ وړانديز شي...</p>
+                <!-- Include the descriptions in other languages here -->
+            </div>
+        </div>
+
+        <div class="attraction" id="attraction5">
+            <div class="attraction-header" onclick="toggleAttraction('attraction5')">
+                <img src="attraction5.jpg" alt="Attraction5">
+                <h2>
+                    <span lang="en">Ziggarauts</span>
+                </h2>
+            </div>
+            <div>
+                <p lang="en" style="display: none;">Ziggarauts are ancient temples that were built by the first settlers...</p>
+                <!-- Include the descriptions in other languages here -->
+        </div>
     </div>
+        
     <script src="scripts.js"></script>
 </body>
 </html>
