@@ -69,8 +69,6 @@ function switchLanguage() {
     window.location.href = 'home.html';
 }
 
-
-
 function toggleAttraction(attractionId) {
     const attraction = document.getElementById(attractionId);
     const description = attraction.querySelector("div:last-child");
