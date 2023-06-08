@@ -1,0 +1,100 @@
+/* HEADER =============================================================================*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* vertical */
+    padding: 25px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 20px;
+    background-color: #88D2FC;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.1), 0 6px 20px 0 rgba(150, 150, 150, 0.09);
+    z-index: 2;
+    min-height: 80px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    cursor: pointer;
+    padding: 0px;
+  }
+
+  #dropdownIcon{
+    display: inline-block;
+    font-size: 90px;
+    line-height: 1;
+    width: 140px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-top: -25px;
+  }
+  #dropdownIcon.cross{
+    margin-top: 0px;
+    font-size: 75px;
+  }
+  
+  #menu {
+    position: fixed;
+    display: block; /* change "none" to "block" */
+    background-color: #ffffffbb;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.1), 0 6px 20px 0 rgba(150, 150, 150, 0.09);
+    top: -100%; /* change the initial position to be off-screen */
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all 0.5s ease-in-out; /* add a transition to all properties */
+    border: 2px solid #00000021;
+    border-top: none;
+}
+
+#menu.show {
+    top: 129px; /* adjust this value to position the menu below the header */
+}
+  
+  #menu li {
+    padding: 0px;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 2px solid #00000021;
+    font-size: 65px;
+    text-align: left;
+    color: rgb(65, 149, 145);
+  }
+  #menu li:last-child {
+    border-bottom: none;
+  }
+  #menu li:hover {
+    background-color: #eee;
+  }
+
+.languagesSymbol{
+    width: 100px;
+}
+
+/* MAIN =============================================================================*/
+
+
+/* FOOTER =============================================================================*/
+footer{
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.624);
+    padding: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(255, 255, 255, 0.691);
+    margin-top: 50px;
+    border-top: 2px solid #00000021;
+}

@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Govantage - Attractions</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="attractions.css">
+    <script src="scripts.js" defer></script>
 </head>
+
 <body>
-    <nav>
-        <button id="switch-lang">Switch Language</button>
-        <button id="add-attraction">Add New Attraction</button>
-    </nav>
+    <header>
+        
+            <!-- <button id="switch-lang">Switch Language</button>
+            <button id="add-attraction">Add New Attraction</button> -->
+            <div id="menu-toggle" title="Menu"><div id="dropdownIcon">&#9776;</div></div>
+            <img src="images/placeholderLogo.png" class="logo"> <!-- placeholder logo -->
+            <img src="images/languagesSymbol.png" class="languagesSymbol">
+            <!-- <nav>
+            </nav> -->
+    </header>
+    <ul id="menu">
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="fitness.html">Fitness</a></li>
+        <li><a href="groups.html">Groups</a></li>
+        <li><a href="goals.html">Goals</a></li>
+    </ul>
+    
+    <main>
+
+        <h1>Attractions</h1>
     <div class="attractions">
         <div class="attraction" id="attraction1">
             <div class="attraction-header" onclick="toggleAttraction('attraction1')">
@@ -30,6 +51,7 @@
                 <!-- Include the descriptions in other languages here -->
             </div>
         </div>
+        
         
         <div class="attraction" id="attraction2">
             <div class="attraction-header" onclick="toggleAttraction('attraction2')">
@@ -106,7 +128,12 @@
                 <!-- Include the descriptions in other languages here -->
         </div>
     </div>
+    
+    </main>
         
-    <script src="scripts.js"></script>
+    <footer>
+        Website authors: Seb Taylor, Arif Ahmed, Ollie Stopher, Paddy Sandford-Smith, Jack Downs
+    </footer>
+    
 </body>
 </html>
