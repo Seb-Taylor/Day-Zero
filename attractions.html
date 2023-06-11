@@ -4,9 +4,9 @@
 <head>
     <title>Govantage - Attractions</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="attractions.css">
     <script src="scripts.js" defer></script>
+    <script src="sebmain.js" defer></script>
 </head>
 
 <body>
@@ -14,23 +14,41 @@
         
             <!-- <button id="switch-lang">Switch Language</button>
             <button id="add-attraction">Add New Attraction</button> -->
-            <div id="menu-toggle" title="Menu"><div id="dropdownIcon">&#9776;</div></div>
+            <div id="menu-toggle" title="Menu"><img id="dropdownIcon" src="images/menu_icon.png"></div>
             <img src="images/placeholderLogo.png" class="logo"> <!-- placeholder logo -->
-            <img src="images/languagesSymbol.png" class="languagesSymbol">
+            <img src="images/languages_icon.png" id="languagesSymbol">
             <!-- <nav>
             </nav> -->
     </header>
     <ul id="menu">
-        <li><a href="diet.html">Diet</a></li>
-        <li><a href="fitness.html">Fitness</a></li>
-        <li><a href="groups.html">Groups</a></li>
-        <li><a href="goals.html">Goals</a></li>
+        <h3> <img id="closeIcon" src="images/x_icon.png"> <div id="menuTitle">Menu</div> </h3>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="about.html">About us</a></li>
     </ul>
     
     <main>
 
         <h1>Attractions</h1>
-    <div class="attractions">
+
+        <div class="indexContainer">
+            <div class="card cardAdd" onclick=" document.location='x.html' ">
+                <h2>Add New Attraction</h2>
+            </div>
+            <div class="card card2" onclick=" document.location='attraction.html' ">
+                <h2>title</h2>
+            </div>
+            <div class="card card3" onclick=" document.location='attraction.html' ">
+                <h2>title</h2>
+            </div>
+            <div class="card card4" onclick=" document.location='attraction.html' ">
+                <h2>title</h2>
+            </div>
+            <div class="card card5" onclick=" document.location='attraction.html' ">
+                <h2>title</h2>
+            </div>
+        </div>
+
+    <!-- <div class="attractions">
         <div class="attraction" id="attraction1">
             <div class="attraction-header" onclick="toggleAttraction('attraction1')">
                 <img src="attraction1.jpg" alt="Attraction 1">
@@ -48,7 +66,7 @@
                 <p lang="uk" style="display: none;">Ферфілдський верф був шотландською суднобудівною компанією...</p>
                 <p lang="zh" style="display: none;">費爾菲爾德造船廠是一家蘇格蘭造船公司...</p>
                 <p lang="ps" style="display: none;">فیرفیلڈ شپ یارڈ افغانستان یوه معروف کمپنۍ دی چه ته افغانستان کې د جوبنې کښېدو...</p>
-                <!-- Include the descriptions in other languages here -->
+                <!-- Include the descriptions in other languages here --> <!--
             </div>
         </div>
         
@@ -123,7 +141,7 @@
             <div>
                 <p lang="en" style="display: none;">Ziggarauts are ancient temples that were built by the first settlers...</p>
         </div>
-    </div>
+    </div> -->
     
     </main>
         

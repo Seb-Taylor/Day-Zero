@@ -1,3 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    /* background-image: linear-gradient( #e7f1ef,#bad6d1); */
+    background-repeat: no-repeat;
+    background-color: #eeeeee;
+}
+
 /* HEADER =============================================================================*/
 header{
     display: flex;
@@ -7,9 +26,9 @@ header{
     position: sticky;
     top: 0px;
     margin-bottom: 20px;
-    background-color: #88D2FC;
+    background-color: #388DBE;
     backdrop-filter: blur(12px);
-    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.1), 0 6px 20px 0 rgba(150, 150, 150, 0.09);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     z-index: 2;
     min-height: 80px;
 }
@@ -29,63 +48,143 @@ header{
 
   #dropdownIcon{
     display: inline-block;
-    font-size: 90px;
-    line-height: 1;
-    width: 140px;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    margin-top: -25px;
+    width: 100px;
+  }
+  #closeIcon{
+    display: block;
+    height: 60px;
+    position: absolute;
+    margin-top: 10px;
   }
   #dropdownIcon.cross{
-    margin-top: 0px;
-    font-size: 75px;
+    /* margin-top: 0px;
+    font-size: 75px; */
   }
   
   #menu {
     position: fixed;
     display: block; /* change "none" to "block" */
-    background-color: #ffffffbb;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.1), 0 6px 20px 0 rgba(150, 150, 150, 0.09);
-    top: -100%; /* change the initial position to be off-screen */
-    left: 0;
+
+    background-color: #388DBE;
+    /* add shadow to right side of menu*/
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    
+
+
+    top: 0; /* change the initial position to be off-screen */
+    left: -100%;
     width: 50%;
-    z-index: 1;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    height: 100%;
+    z-index: 2;
+
     transition: all 0.5s ease-in-out; /* add a transition to all properties */
-    border: 2px solid #00000021;
-    border-top: none;
+    
+    border: 4px solid black;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #menu.show {
-    top: 129px; /* adjust this value to position the menu below the header */
+    left: 0px; /* adjust this value to position the menu below the header */
 }
   
   #menu li {
-    padding: 0px;
+    padding: 25px;
+
+
     margin-right: 25px;
     margin-left: 25px;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    border-bottom: 2px solid #00000021;
-    font-size: 65px;
+    margin-bottom: 40px;
+
+    border: 4px outset black;
+    border-radius: 10px;
+    background-color: white;
+
+    font-size: 45px;
     text-align: left;
-    color: rgb(65, 149, 145);
-  }
-  #menu li:last-child {
-    border-bottom: none;
+    color: black;
+    font-weight: bold;
   }
   #menu li:hover {
     background-color: #eee;
   }
 
-.languagesSymbol{
+  #menuTitle{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 65px;
+    border: none;
+  }
+  h3{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    padding-bottom: 60px;
+  }
+
+#languagesSymbol{
     width: 100px;
 }
 
 /* MAIN =============================================================================*/
+main{
+    padding: 25px;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
 
+.indexContainer{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card{
+  padding: 25px;
+  width: 600px;
+  height: 330px;
+  background-color: rgba(255, 255, 255, 0.774);
+  background-blend-mode: overlay;
+  margin: 50px;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.4), 0 6px 20px 0 rgba(30, 30, 30, 0.39);
+}
+
+h2{
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 330px;
+
+}
+
+.cardAdd{
+  background-image: url(images/add_symbol.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center -100%;
+  background-blend-mode: normal;
+}
+.cardAdd h2{
+  line-height: 1;
+  margin-top: calc(330px - 40px - 20px);
+}
 
 /* FOOTER =============================================================================*/
 footer{
@@ -96,5 +195,4 @@ footer{
     padding-bottom: 60px;
     background-color: rgba(255, 255, 255, 0.691);
     margin-top: 50px;
-    border-top: 2px solid #00000021;
 }
